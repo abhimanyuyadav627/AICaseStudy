@@ -1,0 +1,12 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<div class="login">
+	<h1>GoogleQuest Q&A Labeling</h1>
+    <form action = "/predict" method="POST">
+    	<input type="text" name="question_title" placeholder="Question Title" required="required" />
+        <input type="text" name="question_body" placeholder="Question Body" required="required" />
+      <input type="text" name="answer" placeholder="Answer" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Evaluate</button>
+    </form>
+</div>
